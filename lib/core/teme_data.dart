@@ -83,7 +83,6 @@ abstract class AppTheme {
   // ─── Dark ColorScheme ─────────────────────────────────────────────────────
   static const ColorScheme _darkColorScheme = ColorScheme(
     brightness: Brightness.dark,
-
     // Primary
     primary: Color(0xFFAAC7FF),
     onPrimary: Color(0xFF002E6E),
@@ -460,7 +459,7 @@ abstract class AppTheme {
     useMaterial3: true,
     colorScheme: cs,
     textTheme: _textTheme,
-
+    fontFamily: "Inter",
     // Scaffold
     scaffoldBackgroundColor: Colors.white,
 
