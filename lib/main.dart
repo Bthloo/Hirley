@@ -8,6 +8,8 @@ import 'package:hirely/features/reset_password_screen/presentation/view/pages/re
 import 'package:hirely/core/teme_data.dart';
 import 'package:hirely/features/splash_screen/splash_screen.dart';
 
+import 'features/profile_setup_screen/presentation/view/pages/field_selection_screen.dart';
+import 'features/profile_setup_screen/presentation/view/pages/role_selection_screen.dart';
 import 'features/reset_password_screen/presentation/view/pages/forgot_password_screen.dart';
 
 void main() {
@@ -26,7 +28,7 @@ class MyApp extends StatelessWidget {
         title: 'Hirely',
         theme: AppTheme.light,
         darkTheme: AppTheme.dark,
-        themeMode: ThemeMode.system,
+        themeMode: ThemeMode.light,
         initialRoute: SplashScreen.routeName,
         routes: {
           SplashScreen.routeName : (context) => SplashScreen(),
@@ -36,6 +38,8 @@ class MyApp extends StatelessWidget {
           RegisterScreen.routeName : (context) => RegisterScreen(),
           ForgotPasswordScreen.routeName : (context) => ForgotPasswordScreen(),
           ResetPasswordScreen.routeName : (context) => ResetPasswordScreen(),
+          RoleSelectionScreen.routeName : (context) => RoleSelectionScreen(),
+          FieldSelectionScreen.routeName : (context) => FieldSelectionScreen(),
         },
       ),
     );

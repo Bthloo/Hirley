@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:hirely/core/teme_data.dart';
 
 class ResetIcon extends StatelessWidget {
@@ -6,26 +7,11 @@ class ResetIcon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Stack(
-      alignment: Alignment.center,
-      children: [
-        Positioned(
-          right: 17,
-          child: Icon(
-            Icons.lock,
-            size: 20,
-            color: AppTheme.primary,
-          ),
-        ),
-        RotatedBox(
-          quarterTurns: 3,
-          child: Icon(
-            Icons.replay,
-            size: 60,
-            color: AppTheme.primary,
-          ),
-        )
-      ],
+    return  SvgPicture.asset(
+      "assets/icons/Container.svg",
+      width: 30,
+      height: 30,
+      color: AppTheme.primary,
     );
   }
 }

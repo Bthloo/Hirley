@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:hirely/core/teme_data.dart';
 
 typedef MyValidator = String? Function(String?);
 typedef OnChange = void Function(String?);
@@ -36,6 +37,9 @@ class CustomFormField extends StatelessWidget {
     return Directionality(
       textDirection: TextDirection.ltr,
       child: TextFormField(
+        onTapUpOutside:  (_){
+          FocusScope.of(context).unfocus();
+        },
         textDirection: TextDirection.ltr,
         autofocus: focus,
         controller: controller,
@@ -57,6 +61,20 @@ class CustomFormField extends StatelessWidget {
             labelStyle:  const TextStyle(color: Color(0xff434653)),
             border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(8),
+            ),
+            focusedBorder: OutlineInputBorder(
+              borderSide: BorderSide(color: AppTheme.primary,width: 2),
+              borderRadius: BorderRadius.circular(8)
+            ),
+            errorBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(8)
+            ),
+            focusedErrorBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(8)
+            ),
+
+            disabledBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(8)
             ),
             enabledBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(8),

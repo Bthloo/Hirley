@@ -15,6 +15,7 @@ class ResetPasswordForm extends StatefulWidget {
 
 final TextEditingController newPasswordController = TextEditingController();
 bool _obscure = true;
+bool _confirmObscure = true;
 
 class _ResetPasswordFormState extends State<ResetPasswordForm> {
   @override
@@ -78,7 +79,9 @@ class _ResetPasswordFormState extends State<ResetPasswordForm> {
             hintText: "confirm your new password",
             suffix: IconButton(
               onPressed: (){
-
+                setState(() {
+                  _confirmObscure = !_confirmObscure;
+                });
               },
               icon: Icon(Icons.visibility_off_outlined, size: 16,),
             ),

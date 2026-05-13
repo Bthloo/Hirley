@@ -9,7 +9,6 @@ abstract class AppTheme {
   // ─── Light ColorScheme ────────────────────────────────────────────────────
   static const ColorScheme _lightColorScheme = ColorScheme(
     brightness: Brightness.light,
-
     // Primary
     primary: Color(0xFF00327D),         // Cobalt Blue
     onPrimary: Color(0xFFFFFFFF),
@@ -177,7 +176,7 @@ abstract class AppTheme {
     backgroundColor: Colors.white,
     foregroundColor: cs.primary,
     elevation: 1,
-    shadowColor: Colors.black,
+    shadowColor: Color(0xffF1F5F9),
     surfaceTintColor: Colors.transparent,
     scrolledUnderElevation: 1,
     centerTitle: true,
@@ -187,6 +186,8 @@ abstract class AppTheme {
       fontWeight: FontWeight.bold,
     ),
   );
+
+
 
   static ElevatedButtonThemeData _elevatedButtonTheme(ColorScheme cs) =>
       ElevatedButtonThemeData(
@@ -461,8 +462,7 @@ abstract class AppTheme {
     textTheme: _textTheme,
     fontFamily: "Inter",
     // Scaffold
-    scaffoldBackgroundColor: Colors.white,
-
+    scaffoldBackgroundColor: Color(0xFFF8F9FA),
     // Icon
     iconTheme: IconThemeData(color: cs.onSurface, size: 24),
     primaryIconTheme: IconThemeData(color: cs.onPrimary, size: 24),

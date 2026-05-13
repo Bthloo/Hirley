@@ -15,50 +15,52 @@ static const String routeName = 'onBoarding';
       body: Padding(
         padding: const EdgeInsets.all(20.0),
         child: Center(
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              SvgPicture.asset("assets/images/logo.svg", width: 100.w, height: 100.h,),
-              SizedBox(height: 30.h,),
-              Text("Welcome To Hirley", style: TextStyle(
-                fontSize: 32.sp,
-                color: Color(0xFF151031),
-                fontWeight: FontWeight.bold,
-              )
-              ),
-
-              SvgPicture.asset("assets/images/group.svg", width: 200.w, height: 200.h,),
-              Text("Place Where No one Got Rejected", style: TextStyle(
-                fontSize: 24.sp,
-                color: Color(0xFF151031),
-                fontWeight: FontWeight.w600,
-              )
-              ),
-              SizedBox(height: 10.h,),
-              Text("We Will Train And Enhance Your Skills And Draw Your Career ", style: TextStyle(
-                fontSize: 20.sp,
-                color: Color(0xFF151031),
-                fontWeight: FontWeight.w600,
-              )
-              ),
-              SizedBox(height: 40.h,),
-              SizedBox(
-                width: double.infinity,
-                child: ElevatedButton(
-                    onPressed: () {
-                  Navigator.of(context).pushReplacementNamed(OnboardingTow.routeName);
-                },
-                    child: Padding(
-                      padding:  EdgeInsets.symmetric(vertical: 15.r,),
-                      child: Text("Start Your Journey Now",style: TextStyle(
-                        fontSize: 20.sp,
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
-                      ),),
-                    )
+          child: SingleChildScrollView(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                SvgPicture.asset("assets/images/logo.svg", width: 100.w, height: 100.h,),
+                SizedBox(height: 30.h,),
+                Text("Welcome To Hirley", style: TextStyle(
+                  fontSize: 32.sp,
+                  color: Color(0xFF151031),
+                  fontWeight: FontWeight.bold,
+                )
                 ),
-              ),
-            ],
+            
+                SvgPicture.asset("assets/images/group.svg", width: 250.w, height: 250.h,),
+                Text("Place Where No one Got Rejected", style: TextStyle(
+                  fontSize: 24.sp,
+                  color: Color(0xFF151031),
+                  fontWeight: FontWeight.w600,
+                )
+                ),
+                SizedBox(height: 10.h,),
+                Text("We Will Train And Enhance Your Skills And Draw Your Career ", style: TextStyle(
+                  fontSize: 20.sp,
+                  color: Color(0xFF151031),
+                  fontWeight: FontWeight.w600,
+                )
+                ),
+                SizedBox(height: 40.h,),
+                SizedBox(
+                  width: double.infinity,
+                  child: ElevatedButton(
+                      onPressed: () {
+                    Navigator.of(context).pushReplacementNamed(OnboardingTow.routeName);
+                  },
+                      child: Padding(
+                        padding:  EdgeInsets.symmetric(vertical: 15.r,),
+                        child: Text("Start Your Journey Now",style: TextStyle(
+                          fontSize: 20.sp,
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                        ),),
+                      )
+                  ),
+                ),
+              ],
+            ),
           )
         ),
       ),
