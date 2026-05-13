@@ -26,7 +26,7 @@ class FieldsGridView extends StatelessWidget {
         crossAxisCount: 2,
         crossAxisSpacing: 12.w,
         mainAxisSpacing: 12.h,
-        childAspectRatio: 1.2,
+        childAspectRatio: 1.5,
       ),
       itemBuilder: (context, index) {
         final field = fields[index];

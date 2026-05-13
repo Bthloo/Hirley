@@ -3,6 +3,9 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hirely/features/login_screen/presentation/view/pages/login_screen.dart';
 import 'package:hirely/features/onboarding_screen/view/pages/onBoarding_tow.dart';
 import 'package:hirely/features/onboarding_screen/view/pages/onboarding_screen.dart';
+import 'package:hirely/features/profile_setup_screen/presentation/view/pages/cv_upload_screen.dart';
+import 'package:hirely/features/profile_setup_screen/presentation/view/pages/notification_permission.dart';
+import 'package:hirely/features/profile_setup_screen/presentation/view/pages/profile_set_up_success.dart';
 import 'package:hirely/features/register_screen/presentation/view/pages/register_screen.dart';
 import 'package:hirely/features/reset_password_screen/presentation/view/pages/reset_password_screen.dart';
 import 'package:hirely/core/teme_data.dart';
@@ -29,7 +32,7 @@ class MyApp extends StatelessWidget {
         theme: AppTheme.light,
         darkTheme: AppTheme.dark,
         themeMode: ThemeMode.light,
-        initialRoute: SplashScreen.routeName,
+        initialRoute: NotificationPermissionScreen.routeName,
         routes: {
           SplashScreen.routeName : (context) => SplashScreen(),
           OnboardingScreen.routeName : (context) => OnboardingScreen(),
@@ -40,6 +43,9 @@ class MyApp extends StatelessWidget {
           ResetPasswordScreen.routeName : (context) => ResetPasswordScreen(),
           RoleSelectionScreen.routeName : (context) => RoleSelectionScreen(),
           FieldSelectionScreen.routeName : (context) => FieldSelectionScreen(),
+          CvUploadScreen.routeName : (context) => CvUploadScreen(),
+          ProfileSetUpSuccess.routeName : (context) => ProfileSetUpSuccess(),
+          NotificationPermissionScreen.routeName : (context) => NotificationPermissionScreen(),
         },
       ),
     );

@@ -45,7 +45,6 @@ class FieldContainer extends StatelessWidget {
                         : const Color(0xff434653),
                     size: 50.r,
                   ),
-                  SizedBox(height: 8.h),
                   Text(
                     title,
                     style: TextStyle(

@@ -48,7 +48,7 @@ class FieldSelectionScreen extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                StepSection(currentStep: 2),
+                StepSection(currentStep: 3),
                 SizedBox(height: 10.h),
                 Text(
                   "Your field",
@@ -258,6 +258,8 @@ class FieldSelectionScreen extends StatelessWidget {
                               const SnackBar(content: Text("Please complete all fields")),
                             );
                             return;
+                          }else{
+                           //  Navigator.of(context).pushNamed();
                           }
 
                         },
