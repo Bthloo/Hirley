@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:hirely/features/home_screen/presentation/view/pages/home_screen.dart';
 import 'package:hirely/features/login_screen/presentation/view/pages/login_screen.dart';
 import 'package:hirely/features/onboarding_screen/view/pages/onBoarding_tow.dart';
 import 'package:hirely/features/onboarding_screen/view/pages/onboarding_screen.dart';
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
         theme: AppTheme.light,
         darkTheme: AppTheme.dark,
         themeMode: ThemeMode.light,
-        initialRoute: NotificationPermissionScreen.routeName,
+        initialRoute: HomeScreen.routeName,
         routes: {
           SplashScreen.routeName : (context) => SplashScreen(),
           OnboardingScreen.routeName : (context) => OnboardingScreen(),
@@ -46,6 +47,7 @@ class MyApp extends StatelessWidget {
           CvUploadScreen.routeName : (context) => CvUploadScreen(),
           ProfileSetUpSuccess.routeName : (context) => ProfileSetUpSuccess(),
           NotificationPermissionScreen.routeName : (context) => NotificationPermissionScreen(),
+          HomeScreen.routeName : (context) => HomeScreen(),
         },
       ),
     );

@@ -4,6 +4,8 @@ import 'package:hirely/core/custom_elevated_button.dart';
 import 'package:hirely/core/teme_data.dart';
 import 'package:hirely/features/profile_setup_screen/presentation/view/component/notification_screen_row.dart';
 
+import '../../../../home_screen/presentation/view/pages/home_screen.dart';
+
 class NotificationPermissionScreen extends StatelessWidget {
   const NotificationPermissionScreen({super.key});
 static const String routeName = 'notification_permission_screen';
@@ -77,7 +79,9 @@ static const String routeName = 'notification_permission_screen';
                       height: 57.h,
                       child: CustomElevatedButton(
                           text: "Allow Notifications",
-                          onPressed: () {}
+                          onPressed: () {
+                            Navigator.of(context).pushReplacementNamed(HomeScreen.routeName);
+                          }
                       ),
                     ),
                     SizedBox(height: 10.h),
@@ -89,14 +93,14 @@ static const String routeName = 'notification_permission_screen';
                           overlayColor: WidgetStateProperty.all(AppTheme.primary.withOpacity(0.1))
                       ),
                       onPressed: () {
-                      //  Navigator.of(context).pushReplacementNamed(LoginScreen.routeName);
+                        Navigator.of(context).pushReplacementNamed(HomeScreen.routeName);
                       },
                       child: SizedBox(
                         width: double.infinity,
                         height: 57.h,
                         child: Center(
                           child: Text(
-                            "I already have an account",
+                            "Not n    ow",
                             style: TextStyle(
                               fontSize: 18.sp,
                               color: Colors.black,
