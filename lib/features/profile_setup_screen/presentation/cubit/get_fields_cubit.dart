@@ -1,8 +1,6 @@
 import 'package:bloc/bloc.dart';
 import 'package:meta/meta.dart';
-
 import '../../domain/entities/field_entity.dart';
-import '../../domain/entities/specialization_entity.dart';
 import '../../domain/repositories/field_repository.dart';
 
 part 'get_fields_state.dart';

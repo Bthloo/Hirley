@@ -31,7 +31,7 @@ static final String routeName = "loginScreen";
                     color: Colors.grey.withOpacity(0.3),
                     spreadRadius: 1,
                     blurRadius: 7,
-                    offset: Offset(0, 2), // changes position of shadow
+                    offset: Offset(0, 2),
                   ),
                 ],
                 ),

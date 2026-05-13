@@ -87,26 +87,31 @@ class HomeScreen extends StatelessWidget {
                       },
                     items: [
                       BottomNavigationBarItem(
+                        tooltip: "HOME",
                         activeIcon: _buildActiveIcon(icon:CupertinoIcons.house_fill, text: "HOME"),
                         label: "HOME",
                         icon: _buildUnActiveIcon(icon:CupertinoIcons.house, text: "HOME"),
                       ),
                       BottomNavigationBarItem(
+                        tooltip: "TESTS",
                         activeIcon: _buildActiveIcon(icon:Icons.psychology, text: "TESTS"),
                         label: "TESTS",
                         icon: _buildUnActiveIcon(icon:Icons.psychology_outlined, text: "TESTS"),
                       ),
                       BottomNavigationBarItem(
+                        tooltip: "JOBS",
                         activeIcon: _buildActiveIcon(icon:Icons.work, text: "JOBS"),
                         label: "JOBS",
                         icon: _buildUnActiveIcon(icon:Icons.work_outline_outlined, text: "JOBS"),
                       ),
                       BottomNavigationBarItem(
+                        tooltip: "RANK",
                         activeIcon: _buildActiveIcon(icon:Icons.military_tech, text: "RANK"),
                         label: "RANK",
                         icon: _buildUnActiveIcon(icon:Icons.military_tech_outlined, text: "RANK")
                       ),
                       BottomNavigationBarItem(
+                        tooltip: "PROFILE",
                         activeIcon: _buildActiveIcon(icon:Icons.person, text: "PROFILE"),
                         label: "PROFILE",
                         icon: _buildUnActiveIcon(icon:Icons.person_outline_outlined, text: "PROFILE"),

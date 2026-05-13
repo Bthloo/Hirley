@@ -100,7 +100,7 @@ static const String routeName = 'notification_permission_screen';
                         height: 57.h,
                         child: Center(
                           child: Text(
-                            "Not n    ow",
+                            "Not now",
                             style: TextStyle(
                               fontSize: 18.sp,
                               color: Colors.black,

@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:hirely/core/custom_elevated_button.dart';
 import 'package:hirely/features/onboarding_screen/view/pages/onBoarding_tow.dart';
-import 'package:hirely/features/register_screen/presentation/view/pages/register_screen.dart';
 
 class OnboardingScreen extends StatelessWidget {
   const OnboardingScreen({super.key});

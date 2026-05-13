@@ -100,7 +100,7 @@ static const String routeName = 'profile-setup-success';
               ),
               SizedBox(height: 10),
               Text(
-                "Your profile has been verified and yourskills assessment is complete. You arenow ready to step into the next phaseof your career journey.",
+                "Your profile has been verified and your skills assessment is complete. You are now ready to step into the next phase of your career journey.",
                 style: TextStyle(
                   fontSize: 16.r,
                   color: Color(0xFF434653),

@@ -10,7 +10,7 @@ import 'package:hirely/features/tests_page/presentation/view/pages/tests_page.da
 part 'bottom_app_bar_state.dart';
 
 class BottomAppBarCubit extends Cubit<BottomAppBarState> {
-  static BottomAppBarCubit get(context) => BlocProvider.of(context);
+  static BottomAppBarCubit get(BuildContext context) => BlocProvider.of(context);
   BottomAppBarCubit() : super(BottomAppBarInitial());
 
   int currentTapIndex = 0;

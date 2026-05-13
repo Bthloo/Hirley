@@ -39,7 +39,6 @@ class _CvUploadWidgetState extends State<CvUploadWidget> {
     for (var step in steps) {
       await Future.delayed(const Duration(seconds: 1));
 
-      // التأكد أن الصفحة لا تزال موجودة قبل تحديث الحالة
       if (!mounted) return;
 
       setState(() {
@@ -66,7 +65,6 @@ class _CvUploadWidgetState extends State<CvUploadWidget> {
     });
   }
   Future<void> pickCV() async {
-    // بنمنع التغيير فقط "أثناء" عملية التحليل لضمان استقرار الداتا
     if (analyzing) {
       _showErrorSnackBar("Analysis is in progress. Please wait.");
       return;
@@ -78,7 +76,6 @@ class _CvUploadWidgetState extends State<CvUploadWidget> {
     );
 
     if (result != null && mounted) {
-      // لو اختار ملف جديد، بنصفر كل البيانات القديمة فوراً
       _resetAnalysis();
       setState(() {
         selectedFile = result.files.first;

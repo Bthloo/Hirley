@@ -4,7 +4,6 @@ import 'package:hirely/core/custom_elevated_button.dart';
 import 'package:hirely/features/profile_setup_screen/presentation/view/pages/cv_upload_screen.dart';
 import '../component/roles_list_view.dart';
 import '../component/step_section.dart';
-import 'field_selection_screen.dart';
 
 class RoleSelectionScreen extends StatefulWidget {
   const RoleSelectionScreen({super.key});

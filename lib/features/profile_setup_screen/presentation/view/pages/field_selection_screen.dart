@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hirely/core/custom_elevated_button.dart';
 import 'package:hirely/core/teme_data.dart';
+import 'package:hirely/features/profile_setup_screen/presentation/view/pages/notification_permission.dart';
 import 'package:shimmer/shimmer.dart';
 import 'package:skeletonizer/skeletonizer.dart';
 
@@ -13,7 +14,6 @@ import '../../cubit/form_selection_cubit.dart';
 import '../../cubit/get_fields_cubit.dart';
 import '../../cubit/get_specializations_cubit.dart';
 import '../component/fields_Grid_view.dart';
-import '../component/fields_grid_view.dart' hide FieldsGridView;
 import '../component/step_section.dart';
 
 
@@ -259,7 +259,7 @@ class FieldSelectionScreen extends StatelessWidget {
                             );
                             return;
                           }else{
-                           //  Navigator.of(context).pushNamed();
+                             Navigator.of(context).pushReplacementNamed(NotificationPermissionScreen.routeName);
                           }
 
                         },

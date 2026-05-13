@@ -183,6 +183,13 @@ class HomePage extends StatelessWidget {
             Container(
               padding: EdgeInsets.all(20.r),
               decoration: BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black.withOpacity(0.1),
+                      blurRadius: 4,
+                      offset: Offset(0, 1),
+                    ),
+                  ],
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(12.r),
                 border: Border(left: BorderSide(color: Colors.green,width: 4.w))
@@ -235,6 +242,13 @@ class HomePage extends StatelessWidget {
             Container(
               padding: EdgeInsets.all(20.r),
               decoration: BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black.withOpacity(0.1),
+                      blurRadius: 4,
+                      offset: Offset(0, 1),
+                    ),
+                  ],
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(12.r),
                   border: Border(left: BorderSide(color: Color(0xffF1C03B),width: 4.w))

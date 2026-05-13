@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hirely/features/profile_setup_screen/presentation/view/component/step_section.dart';
-
-import '../../../../onboarding_screen/view/components/dashed_border_container.dart';
 import '../component/cv_upload_widget.dart';
 
 class CvUploadScreen extends StatelessWidget {
