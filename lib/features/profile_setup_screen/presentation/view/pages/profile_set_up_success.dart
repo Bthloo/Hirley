@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hirely/core/custom_elevated_button.dart';
+import 'package:hirely/features/home_screen/presentation/view/pages/home_screen.dart';
 
 import '../../../../../core/teme_data.dart';
 
@@ -113,7 +114,7 @@ static const String routeName = 'profile-setup-success';
                 child: CustomElevatedButton(
                     text: "Go to Dashboard",
                   onPressed: () {
-
+                    Navigator.of(context).pushReplacementNamed(HomeScreen.routeName);
                   },
                 ),
               ),

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hirely/features/profile_setup_screen/presentation/view/component/skills_wrap.dart';
 import 'package:hirely/features/profile_setup_screen/presentation/view/pages/field_selection_screen.dart';
+import 'package:hirely/features/profile_setup_screen/presentation/view/pages/profile_set_up_success.dart';
 
 import '../../../../../core/teme_data.dart';
 
@@ -63,7 +64,7 @@ final List<String> extractedSkills;
                 padding: EdgeInsets.only(top: 20.h),
                 child: ElevatedButton(
                   onPressed: () {
-                    Navigator.of(context).pushNamed(FieldSelectionScreen.routeName);
+                    Navigator.of(context).pushNamed(ProfileSetUpSuccess.routeName);
                   },
                   style: ElevatedButton.styleFrom(
                     padding: EdgeInsets.symmetric(vertical: 12.h),
