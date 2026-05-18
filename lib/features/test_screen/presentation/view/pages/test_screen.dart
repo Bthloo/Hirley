@@ -20,6 +20,9 @@ class _TestScreenState extends State<TestScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        iconTheme: IconThemeData(
+          color: Colors.white,
+        ),
         backgroundColor: Color(0xff0047AB),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.only(

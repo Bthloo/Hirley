@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hirely/core/custom_elevated_button.dart';
+import 'package:hirely/features/test_screen/presentation/view/pages/test_screen.dart';
 
 import '../../../../../core/teme_data.dart';
 
@@ -154,7 +155,7 @@ class HomePage extends StatelessWidget {
                     child: CustomElevatedButton(
                         text: 'Start',
                       onPressed: () {
-
+                          Navigator.of(context).pushNamed(TestScreen.routeName);
                       },
                     ),
                   )

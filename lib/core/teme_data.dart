@@ -175,10 +175,11 @@ abstract class AppTheme {
   static AppBarTheme _appBarTheme(ColorScheme cs) => AppBarTheme(
     backgroundColor: Colors.white,
     foregroundColor: cs.primary,
-    elevation: 1,
+    elevation: 0,
     shadowColor: Color(0xffF1F5F9),
     surfaceTintColor: Colors.transparent,
-    scrolledUnderElevation: 1,
+    shape: BorderDirectional(bottom: BorderSide(color: Color(0xffE1E3E4), width: 1)),
+    scrolledUnderElevation: 0,
     centerTitle: true,
     titleTextStyle: TextStyle(
       color: cs.primary,

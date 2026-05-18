@@ -134,7 +134,7 @@ class HomeScreen extends StatelessWidget {
 
 Widget _buildActiveIcon({required IconData icon, required text}) {
   return Container(
-    margin: EdgeInsets.only(top: 10.h,bottom: 5.h),
+    margin: EdgeInsets.only(top: 12 .h,bottom: 5.h),
     width: double.infinity,
     padding: EdgeInsets.symmetric(horizontal: 5.w, vertical: 5.h),
     decoration: BoxDecoration(
@@ -146,10 +146,10 @@ Widget _buildActiveIcon({required IconData icon, required text}) {
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        Icon(icon, color: AppTheme.primary),
+        Icon(icon, color: AppTheme.primary,size: 20.sp),
         SizedBox(height: 2.h),
         Text(text,style: TextStyle(
-          fontSize: 12.sp,
+          fontSize: 10.sp,
           color: AppTheme.primary,
           fontWeight: FontWeight.w600
         ),)
@@ -159,7 +159,7 @@ Widget _buildActiveIcon({required IconData icon, required text}) {
 }
 Widget _buildUnActiveIcon({required IconData icon, required text}) {
   return Container(
-    margin: EdgeInsets.only(top: 10.h,bottom: 5.h),
+    margin: EdgeInsets.only(top: 12.h,bottom: 5.h),
     width: double.infinity,
     color: Colors.transparent,
     padding: EdgeInsets.symmetric(horizontal: 5.w, vertical: 5.h),
@@ -168,10 +168,10 @@ Widget _buildUnActiveIcon({required IconData icon, required text}) {
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        Icon(icon, color: Color(0xff9CA3AF)),
+        Icon(icon, color: Color(0xff9CA3AF),size: 20.sp,),
         SizedBox(height: 2.h),
         Text(text,style: TextStyle(
-            fontSize: 12.sp,
+            fontSize: 10.sp,
             color: Color(0xff9CA3AF),
         ),)
       ],
