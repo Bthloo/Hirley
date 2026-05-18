@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hirely/core/custom_elevated_button.dart';
+import 'package:hirely/features/test_screen/presentation/view/pages/test_result_screen.dart';
 import '../../../../../core/teme_data.dart';
 import '../components/answer_option_widget.dart';
 
@@ -113,6 +114,7 @@ class _TestScreenState extends State<TestScreen> {
                           side: WidgetStateProperty.all(BorderSide(color: Color(0xFF737784))),
                       ),
                       onPressed: () {
+                       Navigator.pushNamed(context, TestResultScreen.routeName);
                       },
                       child: Center(
                         child: Text(
